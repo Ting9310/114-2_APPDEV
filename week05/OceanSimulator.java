@@ -1,12 +1,16 @@
 package week05;
 
+
 class MarineLife {
+
     protected String name;
     protected String habitat;
 
     public MarineLife(String name, String habitat) {
         this.name = name;
-        this.habitat = habitat;
+
+        this.habitat = habitat + "";
+
     }
 
     public String move() {
@@ -22,6 +26,7 @@ class MarineLife {
     }
 }
 
+ main
 // TODO 1: Shark 繼承 MarineLife
 class Shark extends MarineLife {
     public Shark(String name, String habitat) {
@@ -59,21 +64,31 @@ class Turtle extends MarineLife {
 // TODO 3: Dolphin 繼承 MarineLife
 class Dolphin extends MarineLife {
     public Dolphin(String name, String habitat) {
+
         super(name, habitat);
     }
 
     @Override
     public String move() {
+
         return name + " 躍出水面再潛入";
+
+        return name + "高速衝刺獵食";
+n
     }
 
     @Override
     public String eat() {
+
         return name + " 合作圍捕魚群";
+
+        return name + "高速衝刺獵食";
+
     }
 }
 
 public class OceanSimulator {
+
     public static void main(String[] args) {
         System.out.println("=== 海洋模擬器 ===\n");
 
@@ -82,6 +97,7 @@ public class OceanSimulator {
             new Shark("大白鯊", "深海"),
             new Turtle("綠蠵龜", "珊瑚礁"),
             new Dolphin("瓶鼻海豚", "近海")
+
         };
 
         for (MarineLife creature : ocean) {
@@ -91,4 +107,4 @@ public class OceanSimulator {
             System.out.println();
         }
     }
-}
+

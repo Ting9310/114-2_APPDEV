@@ -1,4 +1,5 @@
 public class Q2_Fish{
+
     String name;
     double weight;
 
@@ -13,4 +14,5 @@ public class Q2_Fish{
 
         myfish.displayinf();
     }
+
 }
