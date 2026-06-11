@@ -1,0 +1,6 @@
+{
+  "name": "「藍海隨行圈」智慧客輪隨行終端",
+  "description": "Bilingual Taiwan seaway radar, smart cabin seat allocation, real-identity boarding check, and Gemini AI companion portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
